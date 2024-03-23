@@ -1,0 +1,12 @@
+{
+    "prettier.ignorePath": [
+      "**/*.html",
+      "**/*.css",
+      "**/*.scss",
+      "**/*.js",
+      "**/*.jsx",
+      "**/*.ts",
+      "**/*.tsx"
+    ]
+  }
+  
