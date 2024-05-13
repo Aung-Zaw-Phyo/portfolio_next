@@ -3,8 +3,8 @@ import { FaLaptopCode } from 'react-icons/fa'
 
 const ProjectWrapper = ({thumbnail, image, title, tools, isApp = false, children}) => {
   return (
-    <div className="p-4">
-        <div className="h-[260px] sm:h-[300px] lg:h-[330px] relative  overflow-hidden rounded-lg">
+    <div className="p-4 flex flex-col">
+        <div className="h-[260px] sm:h-[300px] lg:h-[330px] relative border-[1px] border-[grey] overflow-hidden rounded-lg">
             <div className="p-2 h-auto w-auto sm:h-[650px] sm:w-[430px] -translate-x-0 -rotate-[55deg] -translate-y-28 mx-auto">
                 {
                     image && (
@@ -22,19 +22,17 @@ const ProjectWrapper = ({thumbnail, image, title, tools, isApp = false, children
                 alt=""
                 />
             </div>
-            </div>
-            <div className="p-3">
-            <h1 className="mb-3 text-[19px]">
-                {title}
-            </h1>
-            <div className="flex items-start mb-3">
-                <FaLaptopCode className="mr-3" size={20} />
-                <span className="text-[15px] font-semibold">
-                    {tools}
-                </span>
-            </div>
-            {children}
         </div>
+        <h1 className="p-3 pb-1 text-[19px]">
+            {title}
+        </h1>
+        <div className="p-3 flex items-start">
+            <FaLaptopCode className="mr-3" size={20} />
+            <span className="text-[15px] font-semibold">
+                {tools}
+            </span>
+        </div>
+        {children}
     </div>
   )
 }

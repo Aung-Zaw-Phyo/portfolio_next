@@ -17,7 +17,7 @@ html {
     -moz-osx-font-smoothing: grayscale  !important;
     background-color: #263141  !important;
     color: white  !important;
-    font-size: 17px  !important;
+    font-size: 17.5px  !important;
   }
 
 @tailwind base;
@@ -49,6 +49,7 @@ html {
 
 @layer base {
     button {
+        /* @apply rounded-lg bg-transparent border-[1px] border-[#fff] hover:bg-[#fff] hover:text-black p-2 px-3 duration-300; */
         @apply rounded-lg bg-transparent border-[1px] border-[#fff] hover:bg-[#fff] hover:text-black p-2 px-3 duration-300;
     }
     .title {

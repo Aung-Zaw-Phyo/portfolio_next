@@ -16,22 +16,24 @@ const Project = () => {
           tools={'PHP, Laravel, FilamentPHP, MySql, TailwindCss and Flutter'}
           isApp={true}
         >
-            <p className="mb-4 text-[18px]">
+            <p className="p-3 text-[18px]">
               Super admin can control all role & permission and whole system (Attendance System (Present, Overtime, Leave, Absent, Resign),  Employee Payrolls System and etc ...).
               Supervisor or other role users can manage systems according to his or her role & permission.
               And application is for supervisor or user who can manage Employee Attendance System.
             </p>
-            <a
-              className="inline-block"
-              href="https://greatsavepayroll.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button className="flex items-center">
-                <FaLaptopCode className="mr-2" />
-                <span className="text-[16px]">Great Save (Admin Panel)</span>
-              </button>
-            </a>
+            <div className="p-3 flex flex-wrap gap-3 mt-auto">
+              <a
+                className="inline-block"
+                href="https://greatsavepayroll.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="flex items-center">
+                  <FaLaptopCode className="mr-2" />
+                  <span className="text-[16px]">Great Save (Admin Panel)</span>
+                </button>
+              </a>
+            </div>
         </ProjectWrapper>
 
         <ProjectWrapper
@@ -40,12 +42,12 @@ const Project = () => {
           title={'Myanmar Tennis Federation'}
           tools={'PHP, Laravel, FilamentPHP, MySql, TailwindCss for dashboard, NextJs, TailwindCss for PWA and KBZPay Payment System'}
         >
-          <p className="mb-4 text-[18px]">
+          <p className="p-3 text-[18px]">
             Super admin can control all role & permission and whole system 
             (Managing of Role & Permission, Courts, Timeslots, Facilities, Bookings and etc ..).
             User can choose avaliable time, courts, coach and etc as he like to book and then he can pay by KBZPay.
           </p>
-          <div className="flex flex-wrap gap-3">
+          <div className="p-3 flex flex-wrap gap-3 mt-auto">
             <a
               className="inline-block"
               href="https://admin.myanmartennisfed.com/"
@@ -77,12 +79,12 @@ const Project = () => {
           title={'Ninja HR | Employee Management System Project'}
           tools={'HTML, Css, Bootstrap, Javascript, PHP, MySql, Laravel, Jquery and Ajax'}
         >
-          <p className="mb-4 text-[18px]">
+          <p className="p-3 text-[18px]">
             User can login by fingerprint or password and add attendance by pincode or QRSCAN.
             User can manage Payroll system, Attendance system, Project Management system (Creating project, Assigning task to memeber, etc...) and etc...
             according to role & permission.I used a lot of plugins (Larapass (fingerprint), Javascript image viewer, SortableJS, etc ...) in this project.
           </p>
-          <div className="flex flex-wrap gap-3">
+          <div className="p-3 flex flex-wrap gap-3 mt-auto">
             <a
               className="inline-block"
               href="https://github.com/Aung-Zaw-Phyo/ninja_hr"
@@ -103,17 +105,18 @@ const Project = () => {
           title={'Magic Pay | Mini E-Wallet Project'}
           tools={'HTML, Css, Bootstrap, Javascript, PHP, MySql, Laravel, Jquery and Ajax'}
         >
-          <p className="mb-4 text-[18px] ">
+          <p className="p-3 text-[18px] ">
             User can transfer money to another by Scanning QR or manually.
             I provided apis in this project and then rebuilt website for user using Reactjs, ReduxToolkit and TailwindCss.
+            <br />
             <a 
-              className="font-semibold border-b border-white"
+              className="font-semibold text-[yellow] border-b border-[yellow] "
               href="https://github.com/Aung-Zaw-Phyo/magic_pay.git" 
               target="_blank"
               rel="noopener noreferrer"
-            >ReactJS Project Source Code</a> is here.
+            > ReactJS Project Source Code</a> is here.
           </p>
-          <div className="flex flex-wrap gap-3">
+          <div className="p-3 flex flex-wrap gap-3 mt-auto">
             <a
               className="inline-block"
               href="https://github.com/Aung-Zaw-Phyo/MagicPay"
@@ -146,10 +149,10 @@ const Project = () => {
           tools={'Reactjs, ReduxToolkit, TailwindCss, Nodejs | Express and MongoDB'}
           isApp={true}
         >
-          <p className="mb-4 text-[18px]">
+          <p className="p-3 text-[18px]">
             User can communicate each other by private chat or group chat.
           </p>
-          <div className="flex flex-wrap gap-3">
+          <div className="p-3 flex flex-wrap gap-3 mt-auto">
             <a
               className="inline-block"
               href="https://github.com/Aung-Zaw-Phyo/chat-app-client"
@@ -181,10 +184,10 @@ const Project = () => {
           title={'Export '}
           tools={'Reactjs and TailwindCss'}
         >
-          <p className="mb-4 text-[18px]">
+          <p className="p-3 text-[18px]">
             User can use it to export PDF or print for personal or small sale business. 
           </p>
-          <div className="flex flex-wrap gap-3">
+          <div className="p-3 flex flex-wrap gap-3 mt-auto">
             <a
               className="inline-block"
               href="https://github.com/Aung-Zaw-Phyo/export"
