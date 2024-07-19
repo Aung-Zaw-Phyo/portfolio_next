@@ -21,13 +21,11 @@ const About = () => {
               My name is Aung Zaw Phyo.
             </h1>
             <p className="mb-3">
-              I started to learn web development in 2021 with self-learning.
-              After a few months, I became passionate about web development. So,
-              I continued learning it. After over one year, I worked at a local
-              company as a junior web developer. I have over two years of
-              hands-on experiences with Javascript and PHP (Laravel). I am
-              currently building some projects using programming tools which I
-              have learned.
+              I am a passionate web developer with over two years of hands-on experience in JavaScript and PHP (Laravel). 
+              My journey began at a local company where I honed my skills as a junior web developer for over a year. 
+              During my tenure, I collaborated on various projects, learning the intricacies of web development and improving my coding proficiency.
+              Currently, I am building innovative projects using the programming tools I have mastered, 
+              continually practicing and learning to enhance my skills.
             </p>
             <div className="flex flex-col flex-wrap text-[18px] sm:text-[20px] mt-2">
               <a

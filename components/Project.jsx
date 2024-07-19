@@ -106,8 +106,8 @@ const Project = () => {
           tools={'HTML, Css, Bootstrap, Javascript, PHP, MySql, Laravel, Jquery and Ajax'}
         >
           <p className="p-3 text-[18px] ">
-            User can transfer money to another by Scanning QR or manually.
-            I provided apis in this project and then rebuilt website for user using Reactjs, ReduxToolkit and TailwindCss.
+            Users can transfer money to another by Scanning QR or manually.
+            I provided api in this project and then rebuilt website for user using Reactjs, ReduxToolkit and TailwindCss.
             <br />
             <a 
               className="font-semibold text-[yellow] border-b border-[yellow] "
@@ -150,7 +150,7 @@ const Project = () => {
           isApp={true}
         >
           <p className="p-3 text-[18px]">
-            User can communicate each other by private chat or group chat.
+            This is the realtime chatting project. User can communicate each other by private chat or group chat.
           </p>
           <div className="p-3 flex flex-wrap gap-3 mt-auto">
             <a
@@ -178,8 +178,31 @@ const Project = () => {
           </div>
         </ProjectWrapper>
 
-
         <ProjectWrapper
+          thumbnail={"/images/projects/msub/thumbnail.png"}
+          title={'MSub YoteShin '}
+          tools={'Next.Js and TailwindCss'}
+        >
+          <p className="p-3 text-[18px]">
+            I created this profile project for MSub YoteShin as a freelance job.
+          </p>
+          <div className="p-3 flex flex-wrap gap-3 mt-auto">
+            <a
+                className="inline-block"
+                href="https://msubyoteshin.com/my"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="flex items-center">
+                  <BsFillLaptopFill className="mr-2" />
+                  <span className="text-[16px]">MSub YoteShin</span>
+                </button>
+              </a>
+          </div>
+        </ProjectWrapper>
+
+
+        {/* <ProjectWrapper
           thumbnail={"/images/projects/export/thumbnail.png"}
           title={'Export '}
           tools={'Reactjs and TailwindCss'}
@@ -211,7 +234,7 @@ const Project = () => {
                 </button>
               </a>
           </div>
-        </ProjectWrapper>
+        </ProjectWrapper> */}
 
         {/* Movie App */}
         {/* <div className="p-4">
