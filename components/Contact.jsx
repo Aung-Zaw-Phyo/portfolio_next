@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import Input from "./UI/Input";
-import Textarea from "./UI/Textarea";
+import Input from "./ui/Input";
+import Textarea from "./ui/Textarea";
 import Swal from "sweetalert2";
 import useInput from "@/hooks/use-input";
 import { MdMarkEmailUnread } from "react-icons/md";

@@ -20,7 +20,7 @@ const About = () => {
             <h1 className="text-[22px] sm:text-[24px] mb-1">
               My name is Aung Zaw Phyo.
             </h1>
-            <p className="mb-3">
+            <p className="mb-3 md:text-[18px]">
               I am a passionate web developer with over two years of hands-on experience in JavaScript and PHP (Laravel). 
               My journey began at a local company where I honed my skills as a junior web developer for over a year. 
               During my tenure, I collaborated on various projects, learning the intricacies of web development and improving my coding proficiency.
@@ -29,20 +29,10 @@ const About = () => {
             </p>
             <div className="flex flex-col flex-wrap text-[18px] sm:text-[20px] mt-2">
               <a
-                href="/files/mraungzawphyo.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                download
-                className="flex items-center mr-4 mb-2 text-[yellow] cursor-pointer duration-300"
-              >
-                <FaAddressCard size={20} className="mr-2" /> Resume
-              </a>
-
-              <a
                 href="https://github.com/Aung-Zaw-Phyo"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center mr-4 mb-2 text-[yellow] cursor-pointer duration-300"
+                className="flex items-center mr-4 mb-2 hover:text-[yellow] cursor-pointer duration-300"
               >
                 <FaGithubSquare size={20} className="mr-2" /> GitHub
               </a>
@@ -51,7 +41,7 @@ const About = () => {
                 href="https://www.linkedin.com/in/aung-zaw-phyo-a28779238/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center mr-4 mb-2 text-[yellow] cursor-pointer duration-300"
+                className="flex items-center mr-4 mb-2 hover:text-[yellow] cursor-pointer duration-300"
               >
                 <AiFillLinkedin size={20} className="mr-2" /> LinkedIn
               </a>
@@ -60,25 +50,16 @@ const About = () => {
                 href="https://www.facebook.com/profile.php?id=100021514839008"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center mr-4 mb-2 text-[yellow] cursor-pointer duration-300"
+                className="flex items-center mr-4 mb-2 hover:text-[yellow] cursor-pointer duration-300"
               >
                 <FaFacebookSquare size={20} className="mr-2" /> FaceBook
-              </a>
-
-              <a
-                href="tel:09968548024"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center mr-4 mb-2 text-[yellow] cursor-pointer duration-300"
-              >
-                <AiFillPhone size={20} className="mr-2" /> (+95)9968548024
               </a>
 
               <a
                 href="mailto:aungzawphyo1102@gmail.com mb-1"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center flex-wrap mb-2 text-[yellow] cursor-pointer duration-300"
+                className="flex items-center flex-wrap mb-2 hover:text-[yellow] cursor-pointer duration-300"
               >
                 <MdMarkEmailUnread size={20} className="mr-2" />{" "}
                 aungzawphyo1102@gmail.com
