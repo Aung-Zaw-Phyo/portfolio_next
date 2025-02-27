@@ -1,7 +1,7 @@
 import React from 'react'
 import { BsGithub } from "react-icons/bs";
-import { AiOutlineVideoCamera } from "react-icons/ai";
 import ProjectWrapper from '../ui/ProjectWrapper';
+import ChatDemo from '../utils/ChatDemo';
 
 const Chatting = () => {
   return (
@@ -19,17 +19,7 @@ const Chatting = () => {
                 They can create group with their friends and delete the group or leave from group.
           </p>
           <div className="p-3 flex flex-wrap gap-3 mt-auto">
-            <a
-              className="inline-block"
-              href="https://github.com/Aung-Zaw-Phyo/chat-app-client"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button className="flex items-center">
-                <AiOutlineVideoCamera className="mr-2" />
-                <span className="text-[16px]">Demo</span>
-              </button>
-            </a>
+            <ChatDemo/>
             <a
               className="inline-block"
               href="https://github.com/Aung-Zaw-Phyo/chat-app-client"
