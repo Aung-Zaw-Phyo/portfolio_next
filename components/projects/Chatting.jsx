@@ -9,14 +9,19 @@ const Chatting = () => {
           thumbnail={"/images/projects/chat/thumbnail.png"}
           image={"/images/projects/chat/image.png"}
           title={'Chatting App '}
-          tools={'Reactjs, ReduxToolkit, TailwindCss, NodeJs | ExpressJs and MongoDB, Socket.io'}
+          tools={'Reactjs, ReduxToolkit, TailwindCss, NodeJs, ExpressJs and MongoDB, Socket.io'}
           isApp={true}
     >
           <p className="p-3 text-[18px]">
-                This is the realtime chatting project. 
-                Users can communicate each other by private chat or group chat.
-                They can send text message, emoji and photos, and can delete their messages.
-                They can create group with their friends and delete the group or leave from group.
+                Users can register with an email verification system to ensure account security.
+                Users can communicate seamlessly through one-on-one private messages or group conversations with multiple participants.
+                Users can send text messages, emojis, and photos and they can also delete their messages in real time.
+                Users can create chat groups, invite friends, and manage members. They also have the option to leave a group or delete it entirely.
+                <br/>
+                <br/>
+                I built this real-time chatting project using Node.js, Express.js, MongoDB, 
+                and Socket.io for the backend API. 
+                The frontend is developed with React.js, ReduxToolkit, Tailwind CSS, and Socket.io.
           </p>
           <div className="p-3 flex flex-wrap gap-3 mt-auto">
             <ChatDemo/>

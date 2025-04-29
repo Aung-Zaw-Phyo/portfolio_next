@@ -2,9 +2,9 @@ import React from "react";
 import Chatting from "./projects/Chatting";
 import GreatSave from "./projects/GreatSave";
 import Mtf from "./projects/Mtf";
-import NinjaHr from "./projects/NinjaHr";
 import MagicPay from "./projects/MagicPay";
-import Msub from "./projects/Msub";
+import Shop from "./projects/Shop";
+import SafetyFood from "./projects/SafetyFood";
 
 const Projects = () => {
   return (
@@ -12,11 +12,11 @@ const Projects = () => {
         <h1 className="title mb-4">Projects</h1>
         <div className="grid md:grid-cols-2 gap-3">
         <Chatting/>
-        <GreatSave/>
         <Mtf/>
-        <NinjaHr/>
+        <GreatSave/>
+        <Shop/>
         <MagicPay/>
-        <Msub/>
+        <SafetyFood/>
       </div>
     </div>
   );

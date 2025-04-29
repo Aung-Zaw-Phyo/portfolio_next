@@ -1,7 +1,7 @@
 import React from "react";
 import {AiFillHtml5} from 'react-icons/ai'
 import {FaBootstrap, FaGit, FaGithubSquare, FaLaravel, } from 'react-icons/fa'
-import {BiLogoCss3, BiLogoJquery, BiLogoMongodb, BiLogoNodejs, BiLogoPhp, BiLogoReact, BiLogoTailwindCss} from 'react-icons/bi'
+import {BiLogoCss3, BiLogoJquery, BiLogoMongodb, BiLogoNodejs, BiLogoPhp, BiLogoReact, BiLogoTailwindCss, BiLogoTypescript} from 'react-icons/bi'
 import {DiDart, DiJavascript1, DiPhp} from 'react-icons/di'
 import {SiDart, SiExpress, SiMysql, SiNestjs} from 'react-icons/si'
 import { TbBrandFlutter, TbBrandNextjs } from "react-icons/tb";
@@ -45,6 +45,9 @@ const Skill = () => {
                                 <BiLogoJquery size={25} className="mr-5"/> <span>Jquery</span>
                             </div>
                             <div className="flex items-center mb-3 hover:text-[yellow] cursor-pointer duration-300">
+                                <BiLogoTypescript size={25} className="mr-5"/> <span>TypeScript</span>
+                            </div>
+                            <div className="flex items-center mb-3 hover:text-[yellow] cursor-pointer duration-300">
                                 <BiLogoReact size={25} className="mr-5"/> <span>ReactJs</span>
                             </div>
                             <div className="flex items-center mb-3 hover:text-[yellow] cursor-pointer duration-300">
@@ -59,12 +62,6 @@ const Skill = () => {
                         <h1 className="mb-2 text-[24px]">Backend </h1>
                         <div className="p-4">
                             <div className="flex items-center mb-3 hover:text-[yellow] cursor-pointer duration-300">
-                                <BiLogoPhp size={25} className="mr-5"/> <span>PHP</span>
-                            </div>
-                            <div className="flex items-center mb-3 hover:text-[yellow] cursor-pointer duration-300">
-                                <FaLaravel size={25} className="mr-5"/> <span>Laravel</span>
-                            </div>
-                            <div className="flex items-center mb-3 hover:text-[yellow] cursor-pointer duration-300">
                                 <BiLogoNodejs size={25} className="mr-5"/> <span>NodeJs</span>
                             </div>
                             <div className="flex items-center mb-3 hover:text-[yellow] cursor-pointer duration-300">
@@ -72,6 +69,12 @@ const Skill = () => {
                             </div>
                             <div className="flex items-center mb-3 hover:text-[yellow] cursor-pointer duration-300">
                                 <SiNestjs size={25} className="mr-5"/> <span>NestJs</span>
+                            </div>
+                            <div className="flex items-center mb-3 hover:text-[yellow] cursor-pointer duration-300">
+                                <BiLogoPhp size={25} className="mr-5"/> <span>PHP</span>
+                            </div>
+                            <div className="flex items-center mb-3 hover:text-[yellow] cursor-pointer duration-300">
+                                <FaLaravel size={25} className="mr-5"/> <span>Laravel</span>
                             </div>
                         </div>
                     </div>
