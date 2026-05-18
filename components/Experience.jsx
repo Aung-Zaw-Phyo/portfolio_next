@@ -2,7 +2,17 @@ import React from "react";
 
 const experiences = [
   {
+    company: "Bagan Innovation Technology (BiT)",
+    link: "https://baganit.com/",
+    position: "Fullstack Developer",
+    duration: "09/2025 – Present",
+    location: "Yangon",
+    description:
+      "I design and develop scalable web and mobile applications using React.js, React Native, Node.js, Express, and NestJS. I build real-time features with Socket.IO and implement robust REST APIs and backend architectures. During my time here, I have been working on a social application featuring real-time chat, notifications, posts, comments, reactions, and media handling. I focus on performance optimization, clean architecture, and seamless integration between frontend and backend systems across web and mobile platforms.",
+  },
+    {
     company: "Omega Zero Technology",
+    link: null,
     position: "Junior Fullstack Developer",
     duration: "05/2024 – 04/2025",
     location: "Yangon",
@@ -11,6 +21,7 @@ const experiences = [
   },
   {
     company: "FreshMoe Myanmar",
+    link: "https://freshmoe.com/",
     position: "Intern | Junior Web Developer",
     duration: "08/2023 – 01/2024",
     location: "Yangon",
