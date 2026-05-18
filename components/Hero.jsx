@@ -5,8 +5,8 @@ const Hero = () => {
     <div className="container py-6 h-screen w-screen ">
       <div className="h-full w-full flex flex-col justify-center items-center p-4 ">
         <img
-          className="w-[210px] h-[210px] rounded-full mx-auto mb-6"
-          src={"/images/me2.jpg"} 
+          className="w-[200px] h-[200px] md:w-[220px] md:h-[220px] rounded-full mx-auto mb-6"
+          src={"/images/tts.png"} 
           alt=""
         />
         <h1 className="text-[24px] sm:text-[30px] mb-4 inline-flex ">

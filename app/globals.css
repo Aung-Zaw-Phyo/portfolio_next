@@ -1,24 +1,24 @@
 html {
-  --scroll-behavior: smooth!important;
-  scroll-behavior: smooth!important;
-  }
+    --scroll-behavior: smooth!important;
+    scroll-behavior: smooth!important;
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
   
-  body {
+body {
     margin: 0  !important;
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace !important;
     -webkit-font-smoothing: antialiased  !important;
     -moz-osx-font-smoothing: grayscale  !important;
-    background-color: #263141  !important;
-    color: white  !important;
-    font-size: 17.5px  !important;
-  }
+    font-size: 17px  !important;
+    font-family: 'Courier New', monospace !important;
+    background-color: #1e2530  !important;
+    /* color: #c9d1d9 !important; */
+    color: white !important;
+}
 
 @tailwind base;
 @tailwind components;
@@ -155,7 +155,7 @@ html {
     left: 0;
     height: 150%;
     width: 100%;
-    background-color: #263141;
+    background-color: #1e2530;
     border-left: 2px solid #fff;
     animation: typing 3.9s steps(13) infinite;
   }

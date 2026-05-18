@@ -1,4 +1,5 @@
 "use client"
+import { Briefcase } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import React, { useRef } from 'react'
 import { AiFillHome } from 'react-icons/ai';
@@ -17,6 +18,9 @@ const Navigator = () => {
         if (type === "about") {
             router.push('#about')
         }
+        if (type === "experience") {
+            router.push('#experience')
+        }
         if (type === "skill") {
             router.push('#skills')
         }
@@ -31,51 +35,60 @@ const Navigator = () => {
   return (
     <div className=" fixed top-[10%] right-[10px] md:right-[20px] z-50">
         <div className="bg-white rounded-lg text-[#333]">
-          <div
-            className="group relative p-2 mb-2 cursor-pointer hover:text-[#6159CB] duration-100"
-            onClick={navigate.bind(null, "home")}
-          >
-            <div className="absolute top-0 left-[-230%] w-[85px] text-center text-white font-semibold bg-[#ffffff27] p-1 px-3 rounded-lg hidden group-hover:block duration-300">
-              Home
+            <div
+                className="group relative p-2 mb-2 cursor-pointer hover:text-[#6159CB] duration-100"
+                onClick={navigate.bind(null, "home")}
+            >
+                <div className="absolute top-0 left-[-230%] w-[85px] text-center text-white font-semibold bg-[#ffffff27] p-1 px-3 rounded-lg hidden group-hover:block duration-300">
+                Home
+                </div>
+                <AiFillHome size={25} />
             </div>
-            <AiFillHome size={25} />
-          </div>
-          <div
-            className="group relative p-2 mb-2 cursor-pointer hover:text-[#6159CB] duration-100"
-            onClick={navigate.bind(null, "about")}
-          >
-            <div className="absolute top-0 left-[-230%] w-[85px] text-center text-white font-semibold bg-[#ffffff27] p-1 px-3 rounded-lg hidden group-hover:block duration-300">
-              About
+            <div
+                className="group relative p-2 mb-2 cursor-pointer hover:text-[#6159CB] duration-100"
+                onClick={navigate.bind(null, "about")}
+            >
+                <div className="absolute top-0 left-[-230%] w-[85px] text-center text-white font-semibold bg-[#ffffff27] p-1 px-3 rounded-lg hidden group-hover:block duration-300">
+                About
+                </div>
+                <BiSolidUserAccount size={25} />
             </div>
-            <BiSolidUserAccount size={25} />
-          </div>
-          <div
-            className="group relative p-2 mb-2 cursor-pointer hover:text-[#6159CB] duration-100"
-            onClick={navigate.bind(null, "skill")}
-          >
-            <div className="absolute top-0 left-[-230%] w-[85px] text-center text-white font-semibold bg-[#ffffff27] p-1 px-3 rounded-lg hidden group-hover:block duration-300">
-              Skill
+            <div
+                className="group relative p-2 mb-2 cursor-pointer hover:text-[#6159CB] duration-100"
+                onClick={navigate.bind(null, "experience")}
+            >
+                <div className="absolute overflow-hidden top-0 left-[-230%] w-[85px] text-center text-white font-semibold bg-[#ffffff27] p-1 px-2 rounded-lg hidden group-hover:block duration-300">
+                    Experience
+                </div>
+                <Briefcase size={25} />
             </div>
-            <BsCodeSlash size={25} />
-          </div>
-          <div
-            className="group relative p-2 mb-2 cursor-pointer hover:text-[#6159CB] duration-100"
-            onClick={navigate.bind(null, "project")}
-          >
-            <div className="absolute top-0 left-[-230%] w-[85px] text-center text-white font-semibold bg-[#ffffff27] p-1 px-3 rounded-lg hidden group-hover:block duration-300">
-              Project
+            <div
+                className="group relative p-2 mb-2 cursor-pointer hover:text-[#6159CB] duration-100"
+                onClick={navigate.bind(null, "skill")}
+            >
+                <div className="absolute top-0 left-[-230%] w-[85px] text-center text-white font-semibold bg-[#ffffff27] p-1 px-3 rounded-lg hidden group-hover:block duration-300">
+                Skill
+                </div>
+                <BsCodeSlash size={25} />
             </div>
-            <MdOutlineWork size={25} />
-          </div>
-          <div
-            className="group relative p-2 mb-2 cursor-pointer hover:text-[#6159CB] duration-100"
-            onClick={navigate.bind(null, "contact")}
-          >
-            <div className="absolute top-0 left-[-230%] w-[85px] text-center text-white font-semibold bg-[#ffffff27] p-1 px-3 rounded-lg hidden group-hover:block duration-300">
-              Contact
+            <div
+                className="group relative p-2 mb-2 cursor-pointer hover:text-[#6159CB] duration-100"
+                onClick={navigate.bind(null, "project")}
+            >
+                <div className="absolute top-0 left-[-230%] w-[85px] text-center text-white font-semibold bg-[#ffffff27] p-1 px-3 rounded-lg hidden group-hover:block duration-300">
+                Project
+                </div>
+                <MdOutlineWork size={25} />
             </div>
-            <SiMinutemailer size={25} />
-          </div>
+            <div
+                className="group relative p-2 mb-2 cursor-pointer hover:text-[#6159CB] duration-100"
+                onClick={navigate.bind(null, "contact")}
+            >
+                <div className="absolute top-0 left-[-230%] w-[85px] text-center text-white font-semibold bg-[#ffffff27] p-1 px-3 rounded-lg hidden group-hover:block duration-300">
+                Contact
+                </div>
+                <SiMinutemailer size={25} />
+            </div>
         </div>
       </div>
 

@@ -9,7 +9,7 @@ import { TbBrandFlutter, TbBrandNextjs } from "react-icons/tb";
 const Skill = () => {
     return (
         <div className="container py-12" id="skills">
-            <h1 className="title mb-4">My Skills</h1>
+            <h1 className="title mb-4">Skills</h1>
             <div className="text-[20px]">
                 <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-3">
                     <div>
