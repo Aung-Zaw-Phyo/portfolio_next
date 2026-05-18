@@ -1,40 +1,56 @@
-import React from 'react'
-import { FaLaptopCode } from 'react-icons/fa'
+import { FaLaptopCode } from "react-icons/fa";
+import { ExternalLink } from "lucide-react";
 
-const ProjectWrapper = ({thumbnail, image, title, tools, isApp = false, children}) => {
-  return (
-    <div className="group p-4 flex flex-col">
-        <div className="h-[260px] sm:h-[300px] lg:h-[330px] relative border-[1px] border-[grey] overflow-hidden rounded-lg">
-            <div className="p-2 h-auto w-auto sm:h-[660px] sm:w-[480px] -translate-x-0 -rotate-[55deg] -translate-y-28 mx-auto">
-                {
-                    image && (
+const ProjectWrapper = ({ thumbnail, image, title, tools, isApp = false, children }) => {
+    const techList = tools.split(",").map((t) => t.trim());
+
+    return (
+        <div className="card flex flex-col h-full p-0 overflow-hidden group">
+            <div className="relative h-[220px] sm:h-[260px] overflow-hidden bg-secondary/30">
+                <div className="absolute inset-0 flex items-end justify-center p-4">
                     <img
-                        className="h-full w-full"
-                        src={image}
-                        alt=""
-                    />)
-                }
+                        className={`${isApp ? "h-[85%]" : "w-[80%] sm:w-[70%]"} rounded-t-lg transition-transform duration-500 group-hover:scale-105`}
+                        src={thumbnail}
+                        alt={`${title} thumbnail`}
+                    />
+                </div>
+                {image && (
+                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-black/60 flex items-center justify-center">
+                        <img
+                            className="w-[85%] sm:w-[75%] rounded-lg shadow-2xl"
+                            src={image}
+                            alt={`${title} preview`}
+                        />
+                    </div>
+                )}
+                <div className="absolute top-3 right-3">
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-background/80 backdrop-blur-sm text-xs font-medium">
+                        <FaLaptopCode size={12} />
+                        {isApp ? "App" : "Web"}
+                    </span>
+                </div>
             </div>
-            <div className="absolute top-0 bottom-0 right-0 left-0 h-full w-full flex items-end bg-[rgba(37,39,52,.95)] group-hover:bg-[rgba(37,39,52,0.83)] duration-300 ease-in">
-                <img
-                className={`${isApp ? 'h-[90%]' : 'w-[85%] sm:w-[75%] '} rounded-t-lg mx-auto`}
-                src={thumbnail}
-                alt=""
-                />
-            </div>
-        </div>
-        <h1 className="p-3 pb-1 text-[19px]">
-            {title}
-        </h1>
-        <div className="p-3 flex items-start">
-            <FaLaptopCode className="mr-3" size={20} />
-            <span className="text-[15px] font-semibold">
-                {tools}
-            </span>
-        </div>
-        {children}
-    </div>
-  )
-}
 
-export default ProjectWrapper
+            <div className="p-5 flex flex-col flex-1">
+                <h3 className="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">
+                    {title}
+                </h3>
+
+                <div className="flex flex-wrap gap-2 mb-4">
+                    {techList.slice(0, 5).map((tech) => (
+                        <span key={tech} className="tech-badge">
+                            {tech}
+                        </span>
+                    ))}
+                    {techList.length > 5 && (
+                        <span className="tech-badge">+{techList.length - 5}</span>
+                    )}
+                </div>
+
+                <div className="mt-auto">{children}</div>
+            </div>
+        </div>
+    );
+};
+
+export default ProjectWrapper;
