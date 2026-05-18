@@ -1,7 +1,7 @@
-import { Inter } from "next/font/google";
+import { Quicksand } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const quicksand = Quicksand({ subsets: ["latin"] });
 
 const APP_NAME = "Aung Zaw Phyo";
 const APP_DEFAULT_TITLE = "Aung Zaw Phyo";
@@ -67,7 +67,7 @@ export default function RootLayout({ children }) {
 
                 <title>Aung Zaw Phyo</title>
             </head>
-            <body className={inter.className}>{children}</body>
+            <body className={quicksand.className}>{children}</body>
         </html>
     );
 }
